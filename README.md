@@ -1,6 +1,6 @@
 ## Go Algorithms 
 
-Each directory contains an executable Go program demonstrating a specific algorithm or data structure. You can run these programs to see how the algorithms work in practice.
+Each directory contains an executable Go program that implements an algorithm or data structure. You can run these programs to see how the algorithms work in practice.
 
 ### Available Algorithms and Data Structures
 
