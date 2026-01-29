@@ -1,3 +1,5 @@
+// Package bruteforce provides functions to perform brute-force attacks 
+// on an arbitrary set of PIN numbers 0-9999.
 package bruteforce
 
 import (
@@ -24,7 +26,7 @@ func CrackPIN(target string, pins []string) (string, bool) {
 
 
 func GeneratePINs() []string {
-	pins := []string{}
+	pins := make([]string, 0, 10000) 
 	for i := 0; i <= 9999; i++ {
 		pin := fmt.Sprintf("%04d", i)
 		pins = append(pins, pin)

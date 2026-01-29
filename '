@@ -14,8 +14,8 @@ import (
 
 func main() {
 	t := time.Now()
-	f := t.Format("15:04:05 01-02-2006")
-	fmt.Println("Time and Date: ", f)
+	f := t.Format("2006-01-02 15:04:05")
+	fmt.Println("Date & Time: ", f)
 	fmt.Println(os.Getwd())
 	// Use GeneratePINs to create the same dataset in memory
 	pins := util.GeneratePINS()
