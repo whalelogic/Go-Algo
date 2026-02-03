@@ -42,6 +42,7 @@ func main() {
 	targetPIN := random.RandomPINString()
 	fmt.Println("Target PIN to crack: ", targetPIN)
 
+	// bruteforce CrackPIN is also linear search but over strings
 	bruteforce.CrackPIN(targetPIN, pins)
 
 }
