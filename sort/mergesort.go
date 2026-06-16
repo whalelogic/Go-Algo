@@ -5,12 +5,6 @@ import (
 )
 
 
-// Merge Sort Algorithm
-
-// list is for reference. You would typically pass your own list to the MergeSort function.
-var list = []int{64, 34, 25, 12, 22, 11, 90}
-
-
 func Merge(left, right []int) []int {
 	result := []int{}
 	i, j := 0, 0
@@ -25,16 +19,12 @@ func Merge(left, right []int) []int {
 		}
 	}
 
-	// Append remaining elements
 	result = append(result, left[i:]...)
 	result = append(result, right[j:]...)
 
 	return result
 }
 
-// MergeSort sorts a list of integers using the merge sort algorithm.
-// This works by dividing the list into halves, sorting each half recursively,
-// and then merging the sorted halves back together.
 
 func MergeSort(list []int) []int {
 	fmt.Println("Original list:", list)
@@ -44,6 +34,7 @@ func MergeSort(list []int) []int {
 
 	// divide the list
 	mid := len(list) / 2
+	fmt.Println("mid: ", mid)
 	// make 2 halves
 	left := list[:mid]
 	right := list[mid:]
