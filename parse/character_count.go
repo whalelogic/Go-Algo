@@ -6,7 +6,7 @@ package parse
     "bufio"
     "os"
     "strings"
-		"unicode/utf8"
+	"unicode/utf8"
 )
 
 func LetterCount(s string) (map[rune]int, int) {
@@ -49,24 +49,3 @@ func RuneCount(s string) int {
 		return utf8.RuneCountInString(s)
 }
 
-
-// Uncomment the main function to run the program
-
-//
-// func main() {
-//     w := bufio.NewWriter(os.Stdout)
-//     defer w.Flush()
-//
-//     var reader = bufio.NewReader(os.Stdin)
-//     var s string
-//     s, _ = reader.ReadString('\n')
-//     s = strings.TrimSpace(s)
-//
-// 		counts, len := LetterCount(s)
-// 		fmt.Fprintf(w, "Total characters: %d\n", len)
-// 		var i = RuneCount(s)
-// 		fmt.Fprintf(w, "Total runes: %d\n", i)
-// 		PrintCharacterCount(counts, w)
-//
-//
-// } 
